@@ -15,9 +15,17 @@ background-size:cover;
 section{ //envolve a div com a logo e a nav
     /* border:solid green; */
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
+    align-items:center;
     height:10vh;
-div{
+    @media (min-width: 200px)and (max-width:501px) {
+        flex-direction:column;
+        height:20vh;
+        display:flex;
+        justify-content:space-around;
+        align-items:center;
+}
+div{ 
     /* border:solid red; */
     display:flex;
     justify-content:space-evenly;
@@ -25,9 +33,9 @@ div{
     width:15%;
     background-color:white;
     @media (min-width: 200px)and (max-width:501px) {
+        /* border:solid powderblue; */
         width:55vw;  
         height:8vh;
-        /* border:solid powderblue; */
         background-color:transparent;
     }
 img{
@@ -48,65 +56,62 @@ h2{
 
 nav{
     background-color:rgba(0,0,0, 0.7);
-     /* border:solid purple; */
     width:85vw;
+    height:10vh;
     display:flex;
-    justify-content:flex-end;
+    justify-content:center;
     align-items:center;
     @media (min-width: 200px)and (max-width:501px) {
-      /* border:solid firebrick; */
-      display:flex;
-      justify-content:space-evenly;
-      align-items:center;
-        width:99vw;
-    }
-}
-ul{
-    display:flex;
-    justify-content:space-evenly;
-    align-items:center; 
-    width:60%;
-    @media (min-width: 200px)and (max-width:501px) {
-    width:80%;
+        background-color:rgba(0,0,0, 0.7);
+        height:7vh;
+        width:100vw;
 
     }
-}
-li{
-    color:#F28705;
-    font-family: 'Inter', sans-serif;
-    font-weight:400;
-    text-transform:uppercase;
-    list-style: none;
-    @media (min-width: 200px)and (max-width:501px) {
-        font-size:0.8em;
-        margin-left:-2rem;
-    }
-}
-    li:hover{
-        text-decoration:underline white;  
-    }
- 
-//media headerContainer
-@media (min-width: 200px)and (max-width:501px) {
-        flex-direction:column;
-        height:15vh;
+    ul{
+        /* border:solid red; */
+        width:60%;
         display:flex;
-        justify-content:space-around;
+        justify-content:space-evenly;
         align-items:center;
+        @media (min-width: 200px)and (max-width:501px) {
+            /* border:solid blue; */
+             width:90%;
+            position:relative;
+            right:1rem;
+    
+        }
+    }
+    li{
+    
+        color:#F28705;
+        font-family: 'Inter', sans-serif;
+        font-weight:400;
+        text-transform:uppercase;
+        list-style: none;
+        @media (min-width: 200px)and (max-width:501px) {
+            font-size:0.8em;
+        }
+    }
+        li:hover{
+            text-decoration:underline white;  
+        }
+     
 }
+//media headerContainer
+
 }
 `
 export const SectionTittle = styled.div`
-        border:solid red;
+        /* border:solid red; */
         height:90vh;
         background-color:transparent;
         display:flex;
         justify-content:center;
         flex-direction:column;
     @media (min-width: 200px)and (max-width:501px) {
-        border:solid blue;
+        /* border:solid blue; */
         flex-direction:column;
-        justify-content:center;
+        justify-content:space-evenly;
         height:85vh;
         
     }
@@ -117,19 +122,16 @@ export const SectionTittle = styled.div`
         align-items:center;
     }
     span{
-        width:30vw;
-        position:relative;
-        left:8vh;
-        color:white;
+        margin:0vw 0vw 3vw 3vw;
 
+        width:30vw;
+        color:white;
         @media (min-width: 200px)and (max-width:501px) {
-            margin:0rem 0rem 3rem 3rem;
             font-family: 'Inter', sans-serif;
             font-weight:700;
-            position:relative;
-            left:-2vh;
-            bottom: 20vh;
-        
+            width:80vw;
+            position: relative;
+            bottom:15vh;
     }
     }
     `

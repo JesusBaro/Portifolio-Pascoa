@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import * as S from "./StyledHeader";
+import * as S from "./StyledHeader.js";
 import IconLeft from "../Assets/iconLeft.png";
 import IconRight from "../Assets/iconRight.png";
 import logo from "../Assets/logoDoceLar.png"
@@ -20,6 +20,7 @@ export default function Header() {
           <img src={logo} alt="logo Doce Lar" />
           <h2>Doce Lar</h2>
         </div>
+
         <nav>
           <ul>
             <li>Produtos</li>
@@ -27,10 +28,10 @@ export default function Header() {
             <li>Contatos</li>
           </ul>
         </nav>
+
+
       </section>
-
       <S.SectionTittle>
-
         <span>
           <h1>Cada produto feito artesanalmente </h1>
         </span>
@@ -55,3 +56,4 @@ export default function Header() {
     </>
   );
 }
+// 
