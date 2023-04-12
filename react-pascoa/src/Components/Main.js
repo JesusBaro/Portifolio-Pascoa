@@ -13,7 +13,7 @@ import LojaSp from "../Assets/loja-Sp.jpeg";
 
 
 export default function Main() {
-
+//com teste
   const CardsNoPromo = [
     {
       image: ovoDeColherTrad,
@@ -112,12 +112,14 @@ export default function Main() {
         ))}
       </S.SectionProduct>
 
-      <S.Store>
+      <S.StoreWeb>
         {StoreInformation.map((item) => (
-          <div>
+          <section>
             {/* pq as fotos nao estao abrindo */}
-            <img src={item.imageImport} alt="foto da entrada"/>
-            <img src={item.imageLink} alt="foto da entrada"/>
+            {/* <img src={item.imageImport} alt="foto da entrada"/> */}
+           <div></div>
+            {/* <img src={item.imageLink} alt="foto da entrada"/> */}
+
 
             <h2>{item.title}</h2>
             <ul>
@@ -127,10 +129,14 @@ export default function Main() {
               <li>{item.timeFunction.timeThree}</li>
             </ul>
             <a href='' target='{_blank}'>{item.adress}</a>
-          </div>
+          </section>
 
         ))}
-      </S.Store>
+      </S.StoreWeb>
+      <div></div>
+      <S.StoreMobile> 
+
+      </S.StoreMobile>
     </main>
 
   );
