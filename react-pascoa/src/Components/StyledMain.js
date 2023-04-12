@@ -90,8 +90,33 @@ export const ImgItem = styled.img`
     }
 `
 export const Store = styled.section`
-border:solid black;
-height:80vh;
-margin-top:1rem;
-background-color:#8A493D;
+    border:solid black;
+    height:80vh;
+    margin-top:1rem;
+    background-color:#8A493D;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    div{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        border:solid black; 
+        height:80%;
+        width:20%;
+        text-align:center;
+    }
+    h2{
+        color:white;
+        font-weight:600;
+    }
+    a{
+        font-weight:600;
+        text-decoration:none;
+        color:white;
+    }
+    img{
+        width:50%;
+    }
 `
