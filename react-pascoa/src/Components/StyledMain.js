@@ -183,7 +183,7 @@ export const StoreMobile = styled.section`
         height:45%;
         border-radius:75%;
         border:solid red;
-        background-image:url("https://s3-alpha-sig.figma.com/img/21f7/347b/5f13e75665a6efa890fe1e4e115b19db?Expires=1682294400&Signature=Zwvan3uHaHV~htxllp6nRRgeF8KWsVTWoPX3xgDilcwrRJAkTbIQApBJYkksbDCYopssFepH7AdeKINVYAY1uYZMT8JtJZ4vD77aSunF1l3u8q6ytAZ4IwTnzaRXlhAvGOeq4HAGg2eO5LW3Y2bTLFRk3ktXKT95RwvLTjoRZOlO3sELnVoJD-VqdqvSbnQ4GIFAnS4yX7SYEHZOaepXdkPeNTyQOHKPYtZATrKkoVUPvl34dIHswYs4IXIbvd3L03NNf0xbp-Q9CgiQ1ahhibUzHKS0F-EPUGyfQ~fDpeyhlUb24D9tFO~y3HpKjxZHWLxQCxK8CFlE-owTz0WeQg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+        background-image:url("https://s1.static.brasilescola.uol.com.br/be/2022/11/vista-de-um-por-do-sol-sobre-as-nuvens-com-o-ceu-apresentando-varias-cores.jpg");
         background-position:center;
         background-size:cover;
         display:flex;
